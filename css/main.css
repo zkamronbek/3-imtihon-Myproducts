@@ -373,6 +373,22 @@ template {
   src: url("../fonts/poppins-v19-latin-700.woff2") format("woff2"), url("../fonts/poppins-v19-latin-700.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: swap;
+  src: url("../fonts/inter-v8-latin-500.woff2") format("woff2"), url("../fonts/inter-v8-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: swap;
+  src: url("../fonts/montserrat-v23-latin-600.woff2") format("woff2"), url("../fonts/montserrat-v23-latin-600.woff") format("woff");
+}
+
 *,
 ::before,
 ::after {
@@ -428,5 +444,151 @@ a {
   max-width: 1154px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.price-table {
+  padding-bottom: 150px;
+}
+
+.price-table__title {
+  margin: 0;
+  font-family: "Poppins", Arial, San serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343D;
+  text-align: center;
+}
+
+.price-teble__text {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: "Poppins", Arial, San serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+  text-align: center;
+}
+
+.price-table__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price-table__item {
+  width: 100%;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin-right: 70px;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.price-table__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.price-table__item:hover {
+  background-color: #02897A;
+  color: #fff;
+}
+
+.price-table__item-title {
+  font-family: "Poppins", Arial, San serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343D;
+}
+
+.price-table__paragrap-tim {
+  font-family: "Poppins", Arial, San serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: #22343D;
+}
+
+.price-table__paragrap {
+  margin-bottom: 16px;
+  font-family: "Inter", Arial, san serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #22343D;
+}
+
+.price-table__paragrap:nth-child(3n) {
+  margin-bottom: 38px;
+}
+
+.price-table__wrapper {
+  font-family: "Poppins", Arial, San serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 76px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #02897A;
+  display: inline-block;
+}
+
+.price-table__slider {
+  display: inline-block;
+  font-family: "Inter", Arial, san serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  color: #02897A;
+}
+
+.price-table__desc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #AFAFAF;
+}
+
+.price-table__link {
+  padding: 11px 18px;
+  font-family: "Montserrat", Arial, San serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  width: 139px;
+  height: 44px;
+  background: #02897A;
+  border-radius: 8px;
+}
+
+.price-table__link:hover {
+  color: #02897A;
+  background-color: #fff;
+  border: 2px solid #07816d;
+  -webkit-transition: all .25 ease;
+  transition: all .25 ease;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 /*# sourceMappingURL=main.css.map */

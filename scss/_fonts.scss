@@ -34,3 +34,21 @@
          url('../fonts/poppins-v19-latin-700.woff2') format('woff2'), 
          url('../fonts/poppins-v19-latin-700.woff') format('woff'); 
   }
+@font-face {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 500;
+     font-size: swap;
+     src: 
+          url('../fonts/inter-v8-latin-500.woff2') format('woff2'),
+          url('../fonts/inter-v8-latin-500.woff') format('woff');
+   }
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 600;
+     font-size: swap;
+     src: 
+          url('../fonts/montserrat-v23-latin-600.woff2') format('woff2'),
+          url('../fonts/montserrat-v23-latin-600.woff') format('woff');
+   }
