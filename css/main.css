@@ -483,7 +483,7 @@ a {
 }
 
 .price-table__item {
-  width: 100%;
+  width: 322px;
   text-align: center;
   padding-top: 24px;
   padding-bottom: 32px;
@@ -491,6 +491,8 @@ a {
   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
 }
 
 .price-table__item:nth-child(3n) {
@@ -502,6 +504,20 @@ a {
   color: #fff;
 }
 
+.price-table__item:hover .price-table__item-desc,
+.price-table__item:hover .price-table__item-paragrap,
+.price-table__item:hover .price-table__item-paragrap-tim,
+.price-table__item:hover .price-table__item-title,
+.price-table__item:hover .price-table__item-slider,
+.price-table__item:hover .price-table__item-wrapper {
+  color: #fff;
+}
+
+.price-table__item:hover .price-table__item-link {
+  background-color: #fff;
+  color: #22343D;
+}
+
 .price-table__item-title {
   font-family: "Poppins", Arial, San serif;
   font-style: normal;
@@ -511,7 +527,7 @@ a {
   color: #22343D;
 }
 
-.price-table__paragrap-tim {
+.price-table__item-paragrap-tim {
   font-family: "Poppins", Arial, San serif;
   font-style: normal;
   font-weight: normal;
@@ -520,7 +536,7 @@ a {
   color: #22343D;
 }
 
-.price-table__paragrap {
+.price-table__item-paragrap {
   margin-bottom: 16px;
   font-family: "Inter", Arial, san serif;
   font-style: normal;
@@ -531,11 +547,11 @@ a {
   color: #22343D;
 }
 
-.price-table__paragrap:nth-child(3n) {
+.price-table__item-paragrap:nth-child(3n) {
   margin-bottom: 38px;
 }
 
-.price-table__wrapper {
+.price-table__item-wrapper {
   font-family: "Poppins", Arial, San serif;
   font-style: normal;
   font-weight: bold;
@@ -547,7 +563,7 @@ a {
   display: inline-block;
 }
 
-.price-table__slider {
+.price-table__item-slider {
   display: inline-block;
   font-family: "Inter", Arial, san serif;
   font-style: normal;
@@ -558,7 +574,7 @@ a {
   color: #02897A;
 }
 
-.price-table__desc {
+.price-table__item-desc {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -568,7 +584,7 @@ a {
   color: #AFAFAF;
 }
 
-.price-table__link {
+.price-table__item-link {
   padding: 11px 18px;
   font-family: "Montserrat", Arial, San serif;
   font-style: normal;
@@ -580,15 +596,5 @@ a {
   height: 44px;
   background: #02897A;
   border-radius: 8px;
-}
-
-.price-table__link:hover {
-  color: #02897A;
-  background-color: #fff;
-  border: 2px solid #07816d;
-  -webkit-transition: all .25 ease;
-  transition: all .25 ease;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
 }
 /*# sourceMappingURL=main.css.map */

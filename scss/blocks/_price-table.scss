@@ -30,20 +30,32 @@ text-align: center;
     display: flex;
 }
 .price-table__item {
-    width: 100%;
+    width: 322px;
     text-align: center;
     padding-top: 24px;
     padding-bottom: 32px;
     margin-right: 70px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
+transition: .5s linear;
 &:nth-child(3n){
     margin-right: 0;
 }
 &:hover{
     background-color: #02897A;
     color: #fff;
-
+.price-table__item-desc,
+.price-table__item-paragrap,
+.price-table__item-paragrap-tim,
+.price-table__item-title,
+.price-table__item-slider,
+.price-table__item-wrapper{
+    color: #fff;
+}
+.price-table__item-link{
+    background-color: #fff;
+    color: #22343D;
+}
 }
 
 }
@@ -56,7 +68,7 @@ line-height: 40px;
 color: #22343D;
 
 }
-.price-table__paragrap-tim {
+.price-table__item-paragrap-tim {
     font-family:$Poppins;
 font-style: normal;
 font-weight: normal;
@@ -65,7 +77,7 @@ line-height: 40px;
 color: #22343D;
 
 }
-.price-table__paragrap {
+.price-table__item-paragrap {
     margin-bottom: 16px;
     font-family:$inter;
 font-style: normal;
@@ -79,7 +91,7 @@ margin-bottom: 38px;
 }
 }
 
-.price-table__wrapper{
+.price-table__item-wrapper{
     font-family:$Poppins;
     font-style: normal;
     font-weight: bold;
@@ -90,7 +102,7 @@ margin-bottom: 38px;
     color: #02897A;
     display: inline-block;
 }
-.price-table__slider{
+.price-table__item-slider{
     display: inline-block;
     font-family:$inter;
 font-style: normal;
@@ -100,7 +112,7 @@ line-height: 30px;
 letter-spacing: 0.1px;
 color: #02897A;
 }
-.price-table__desc{
+.price-table__item-desc{
     font-family: Poppins;
 font-style: normal;
 font-weight: normal;
@@ -109,7 +121,7 @@ line-height: 19px;
 letter-spacing: 0.1px;
 color: #AFAFAF;
 }
-.price-table__link {
+.price-table__item-link {
    
     padding: 11px 18px;
     font-family:$motserret;
@@ -123,11 +135,5 @@ height: 44px;
 background: #02897A;
 border-radius: 8px;
  
-&:hover{
-  color: #02897A;
-background-color: #fff;
-border: 2px solid #07816d;
-  transition: all .25 ease;
-  transform: translate(-50%);
 }
-}
+
