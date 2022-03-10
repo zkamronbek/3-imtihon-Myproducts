@@ -483,9 +483,9 @@ a {
 }
 
 .price-table__item {
+  text-align: center;
   width: 322px;
   text-align: center;
-  padding-top: 24px;
   padding-bottom: 32px;
   margin-right: 70px;
   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
@@ -596,5 +596,22 @@ a {
   height: 44px;
   background: #02897A;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 1154px) {
+  .price-table__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  .price-table__item {
+    text-align: center;
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .price-table__item:nth-child(3n) {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
