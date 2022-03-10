@@ -490,6 +490,16 @@ a {
   color: #fff;
 }
 
+.theme__btn {
+  padding: 6px;
+  border: none;
+  margin-left: 24px;
+}
+
+.theme__btn:nth-child() {
+  margin-left: 0;
+}
+
 .header__nav {
   margin-left: auto;
 }
