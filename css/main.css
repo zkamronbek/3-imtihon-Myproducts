@@ -477,8 +477,24 @@ a {
 }
 
 @media only screen and (max-width: 1154px) {
-  .offer {
+  .offer__content {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__content {
+    margin: 0 auto;
+  }
+  .offer__svg {
+    margin: 0 auto;
+    margin-top: 42px;
   }
 }
 /*# sourceMappingURL=main.css.map */
