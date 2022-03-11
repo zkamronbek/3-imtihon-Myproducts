@@ -475,4 +475,10 @@ a {
   color: #FFFFFF;
   background-color: #719cf8;
 }
+
+@media only screen and (max-width: 1154px) {
+  .offer {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */
