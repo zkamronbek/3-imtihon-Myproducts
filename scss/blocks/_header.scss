@@ -1,5 +1,10 @@
 .header {
-    padding: 21px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
 }
 
 .header__container {
@@ -26,6 +31,12 @@
         color: #02897A;
     }
 
+
+
+    &:active {
+        opacity: 0.6;
+    }
+
     &:nth-child(2n) {
         margin-right: 0;
     }
@@ -36,13 +47,16 @@
     color: #fff;
 }
 
-.theme__btn{
-    padding: 6px;
+.theme__btn {
+    background-color: transparent;
     border: none;
     margin-left: 24px;
 
-    &:nth-child(){
+    &:nth-child() {
         margin-left: 0;
+    }
+    &:active {
+        opacity: 0.6;
     }
 }
 
@@ -51,10 +65,10 @@
 }
 
 .header__nav-list {
-    display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
 }
 
 .header__nav-link {
@@ -68,6 +82,11 @@
 
     &:hover {
         border-bottom: 3px solid #02897A;
+        color: #02897A;
+    }
+
+    &:active {
+        opacity: 0.6;
     }
 }
 
@@ -93,9 +112,10 @@
     &::after {
         display: block;
         height: 4px;
+        border-radius: 2px;
         background-color: #173A56;
         margin-bottom: 2px;
-        transition: 0.2s ease all;
+        transition: 150ms ease all;
         content: '';
     }
 
@@ -117,7 +137,7 @@
         width: 100%;
         position: absolute;
         top: 50%;
-        right:  0;
+        right: 0;
         transform: translateY(-50%);
     }
 
@@ -143,11 +163,14 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 719px) {
     .header {
         padding: 21px;
     }
 
+    .theme__btn{
+        display: none;
+    }
 
     .header__burger {
         display: block;
@@ -159,7 +182,6 @@
 
     .header__nav {
         display: none;
-        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -170,7 +192,7 @@
         &::before {
             width: 100%;
             height: 100%;
-            background-color: rgba(#000, 0.7);
+            background-color: rgba(#000, 0.4);
             position: absolute;
             top: 0;
             left: 0;
@@ -183,11 +205,11 @@
 
     .header__nav--opened {
         display: block;
-      }
-    
-      .header__nav--opened::before {
+    }
+
+    .header__nav--opened::before {
         animation: shadow-open 0.3s linear;
-      }
+    }
 
     .header__nav-wrapper {
         flex-direction: column;
@@ -219,5 +241,11 @@
         display: none;
     }
 
+    .header__nav-link{
+        &:hover{
+            border-bottom: 3px transparent;
+
+        }
+    }
 
 }

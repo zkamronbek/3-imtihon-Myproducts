@@ -425,10 +425,12 @@ a {
 
 .main__link {
   display: inline-block;
+  min-width: 175px;
   padding: 15px 41px;
   background: #02897A;
   border-radius: 4px;
   color: #fff;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -448,7 +450,12 @@ a {
 }
 
 .header {
-  padding: 21px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #fff;
 }
 
 .header__container {
@@ -481,6 +488,10 @@ a {
   color: #02897A;
 }
 
+.header__btn:active {
+  opacity: 0.6;
+}
+
 .header__btn:nth-child(2n) {
   margin-right: 0;
 }
@@ -491,7 +502,7 @@ a {
 }
 
 .theme__btn {
-  padding: 6px;
+  background-color: transparent;
   border: none;
   margin-left: 24px;
 }
@@ -500,17 +511,21 @@ a {
   margin-left: 0;
 }
 
+.theme__btn:active {
+  opacity: 0.6;
+}
+
 .header__nav {
   margin-left: auto;
 }
 
 .header__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__nav-link {
@@ -526,6 +541,11 @@ a {
 
 .header__nav-link:hover {
   border-bottom: 3px solid #02897A;
+  color: #02897A;
+}
+
+.header__nav-link:active {
+  opacity: 0.6;
 }
 
 .logo:hover {
@@ -547,10 +567,11 @@ a {
 .header__burger::before, .header__burger-inner, .header__burger::after {
   display: block;
   height: 4px;
+  border-radius: 2px;
   background-color: #173A56;
   margin-bottom: 2px;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
+  -webkit-transition: 150ms ease all;
+  transition: 150ms ease all;
   content: '';
 }
 
@@ -595,9 +616,12 @@ a {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 719px) {
   .header {
     padding: 21px;
+  }
+  .theme__btn {
+    display: none;
   }
   .header__burger {
     display: block;
@@ -609,7 +633,6 @@ a {
   }
   .header__nav {
     display: none;
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -620,7 +643,7 @@ a {
   .header__nav::before {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
@@ -668,6 +691,9 @@ a {
   }
   .header__btn {
     display: none;
+  }
+  .header__nav-link:hover {
+    border-bottom: 3px transparent;
   }
 }
 /*# sourceMappingURL=main.css.map */

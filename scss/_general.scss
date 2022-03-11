@@ -43,10 +43,12 @@ a {
 
 .main__link {
     display: inline-block;
+    min-width: 175px;
     padding: 15px 41px;
     background: #02897A;
     border-radius: 4px;
     color: #fff;
+    text-align: center;
     text-decoration: none;
 
     &:hover {
