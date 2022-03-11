@@ -88,19 +88,19 @@
 
 }
 
-// @media only screen and (max-width:1154px) {
-//     .clients__list {
-//         flex-wrap: wrap
-//     }
+@media only screen and (max-width:1154px) {
+    .clients__list {
+        flex-wrap: wrap
+    }
 
-//     .clients__item {
-//         margin-right: 0;
-//         margin: 0 auto;
-//         margin-bottom: 32px;
+    .clients__item {
+        margin-right: 0;
+        margin: 0 auto;
+        margin-bottom: 32px;
 
-//         &:nth-child(3n) {
-//             margin: 0 auto;
-//             margin-bottom:32px;
-//         }
-//     }
-// }
+        &:nth-child(3n) {
+            margin: 0 auto;
+            margin-bottom:32px;
+        }
+    }
+}

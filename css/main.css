@@ -516,4 +516,20 @@ a {
   letter-spacing: 0.2px;
   color: #252B42;
 }
+
+@media only screen and (max-width: 1154px) {
+  .clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients__item {
+    margin-right: 0;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .clients__item:nth-child(3n) {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
