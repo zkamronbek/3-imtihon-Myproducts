@@ -548,9 +548,11 @@ a {
   .footer__nav-content {
     margin: 0 auto;
     display: block;
+    margin-bottom: 32px;
   }
   .footer__nav-title {
-    width: unset;
+    margin: 0 auto;
+    margin-bottom: 34px;
   }
 }
 /*# sourceMappingURL=main.css.map */

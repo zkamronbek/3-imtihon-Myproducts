@@ -100,6 +100,7 @@ line-height: 30px;
 color: #22343D;
 
 }
+
 @media only screen and (max-width:808px){
     .footer__nav{
         display: block;
@@ -108,8 +109,10 @@ color: #22343D;
     .footer__nav-content{
         margin: 0 auto;
         display: block;
+        margin-bottom: 32px;
     }
     .footer__nav-title{
-        width: unset;
+    margin: 0 auto;
+    margin-bottom: 34px;
     }
 }
