@@ -55,6 +55,7 @@
     &:nth-child() {
         margin-left: 0;
     }
+
     &:active {
         opacity: 0.6;
     }
@@ -155,6 +156,10 @@
 
 
 @media only screen and (max-width: 900px) {
+    .header {
+        padding: 5px;
+    }
+
     .header__nav-link {
         padding: 13px;
         padding-bottom: 10px;
@@ -168,16 +173,8 @@
         padding: 21px;
     }
 
-    .theme__btn{
+    .theme__btn {
         display: none;
-    }
-
-    .header__burger {
-        display: block;
-        position: absolute;
-        right: 30px;
-        top: 35px;
-        transform: translateY(-50%);
     }
 
     .header__nav {
@@ -186,10 +183,10 @@
         top: 100%;
         left: 0;
         width: 100%;
-        height: calc(100vh - 72px);
         margin: 0;
-
+        
         &::before {
+            height: calc(100vh - 79px);
             width: 100%;
             height: 100%;
             background-color: rgba(#000, 0.4);
@@ -203,30 +200,9 @@
         }
     }
 
-    .header__nav--opened {
-        display: block;
-    }
-
-    .header__nav--opened::before {
-        animation: shadow-open 0.3s linear;
-    }
-
-    .header__nav-wrapper {
-        flex-direction: column;
-        background-color: #333A44;
-        padding: 64px 15px 24px;
-        height: 100%;
-        width: fit-content;
-        position: relative;
-        z-index: 4;
-    }
-
-    .header__nav--opened .header__nav-wrapper {
-        animation: header-content-open 0.3s linear;
-    }
-
     .header__nav-list {
         flex-grow: 1;
+        display: block;
     }
 
     .header__nav-item {
@@ -241,11 +217,46 @@
         display: none;
     }
 
-    .header__nav-link{
-        &:hover{
+    .header__nav-link {
+        &:hover {
             border-bottom: 3px transparent;
 
         }
     }
+
+    .header__burger {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 35px;
+        transform: translateY(-50%);
+    }
+
+
+
+    .header__nav--opened {
+        display: block;
+    }
+
+    .header__nav--opened::before {
+        animation: shadow-open 0.3s linear;
+    }
+
+    .header__nav-wrapper {
+        flex-grow: 0;
+        flex-direction: column;
+        background-color: #22343D;
+        padding: 64px 15px 24px;
+        height: 100%;
+        width: fit-content;
+        position: relative;
+        z-index: 4;
+    }
+
+    .header__nav--opened .header__nav-wrapper {
+        animation: header-content-open 0.3s linear;
+    }
+
+
 
 }
