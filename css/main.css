@@ -484,6 +484,8 @@ a {
   background: #02897A;
   border-radius: 8px;
   padding: 11px 18px;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
 }
 
 .enterprise__link:hover {
