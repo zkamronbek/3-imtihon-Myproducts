@@ -429,4 +429,73 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+.reference {
+  padding: 150px 0;
+}
+
+.reference__title {
+  margin: 0;
+  font-family: 'Poppins'Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343D;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.reference__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reference__svg {
+  width: 100%;
+  margin-right: 63px;
+}
+
+.reference__desc {
+  margin-bottom: 32px;
+  width: 533px;
+}
+
+.reference__desc:nth-child(3n) {
+  margin-bottom: 0;
+}
+
+.reference__desc-svg {
+  display: inline-block;
+}
+
+.reference__desc-title {
+  font-family: 'Poppins'Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: inline-block;
+  color: #22343D;
+  margin: 0;
+  margin-left: 14px;
+  margin-bottom: 23px;
+}
+
+.reference__desc-text {
+  font-family: 'Poppins'Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #22343D;
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */
