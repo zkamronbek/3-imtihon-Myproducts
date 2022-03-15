@@ -453,8 +453,10 @@ a {
 }
 
 .reference__svg {
-  width: 100%;
-  margin-right: 63px;
+  width: 528px;
+  height: auto;
+  margin-right: auto;
+  background: url("../../img/reference.svg") no-repeat center center;
 }
 
 .reference__desc {
@@ -497,5 +499,17 @@ a {
           align-items: center;
   color: #22343D;
   margin: 0;
+}
+
+@media only screen and (max-width: 1154px) {
+  .reference__svg {
+    background-image: url("../../img/reference-svg2.svg");
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reference__desc {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
