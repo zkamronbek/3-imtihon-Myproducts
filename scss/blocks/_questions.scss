@@ -1,0 +1,124 @@
+// .questions {
+
+// }
+
+.questions__title {
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: #22343D;
+
+}
+
+.questions__text {
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22343D;
+}
+
+// .questions__content {
+
+// }
+
+
+.questions__item {
+    border-bottom: 1px solid #E7E7E7;
+    margin-bottom: 16px;
+}
+
+.questions__item-title {
+    margin: 0;
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22343D;
+    display: flex;
+}
+
+.questions__togler {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    padding-bottom: 24px;
+
+    cursor: pointer;
+
+}
+
+.questions__item-text {
+    width: fit-content;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #22343D;
+
+    display: none;
+}
+
+.questions__wrap-span {
+
+    margin-right: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #02897A;
+}
+
+.questions__span {
+
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+
+    position: absolute;
+    display: inline-block;
+
+    &::before {
+
+        height: 2px;
+        width: 10px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        background-color: #fff;
+        position: absolute;
+        content: '';
+    }
+
+}
+
+.questions__togler--opened .questions__span::before {
+    display: none;
+}
+
+.questions__togler--opened .questions__item-text {
+    display: block;
+}
+
+.questions__list {
+    @include reset-list;
+
+}
