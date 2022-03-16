@@ -542,7 +542,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+    text-align: left;
   }
   .management__item:nth-child(2n) {
     -webkit-box-orient: vertical;
@@ -552,6 +552,19 @@ a {
   }
   .management__item-img {
     margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .management__item-content {
+    width: 330px;
+  }
+  .management__item {
+    text-align: left;
+  }
+  .management__item-img {
+    width: 349px;
+    height: 306px;
   }
 }
 /*# sourceMappingURL=main.css.map */
