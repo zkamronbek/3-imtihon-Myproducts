@@ -1,5 +1,6 @@
 .reference {
     padding: 150px 0;
+  
 }
 
 .reference__title {
@@ -32,7 +33,7 @@
 .reference__desc {
 
     margin-bottom: 32px;
-    width: 533px;
+    width: 528px;;
 
     &:nth-child(3n) {
         margin-bottom: 0;
@@ -40,8 +41,14 @@
 }
 
 .reference__desc-svg {
-    display: inline-block;
 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F5F7;
 
 }
 
@@ -51,12 +58,12 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    display: inline-block;
+
     color: #22343D;
     margin: 0;
     margin-left: 14px;
     margin-bottom: 23px;
-
+    display: inline-block;
 }
 
 .reference__desc-text {
@@ -70,6 +77,10 @@
     color: #22343D;
     margin: 0;
 }
+.reference__wrap{
+    display: flex;
+   
+}
 
 @media only screen and (max-width:1154px) {
     .reference__svg {
@@ -78,7 +89,14 @@
 }
 
 @media only screen and (max-width:768px) {
-    .reference__desc{
+    .reference__desc {
         display: block;
+    }
+    .reference__svg {
+        background-image: url("../../img/reference-svg2.svg");
+    }
+    .reference__conteiner{
+        display: flex;
+        align-items: center;
     }
 }
