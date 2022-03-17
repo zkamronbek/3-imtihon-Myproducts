@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .strategies__title {
     font-family: 'Poppins';
     font-weight: 700;
@@ -12,6 +16,7 @@
     font-size: 16px;
     line-height: 26px;
     color: #22343D;
+    margin-bottom: 32px;
 }
 
 .strategies__list {
