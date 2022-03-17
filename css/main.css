@@ -423,25 +423,6 @@ a {
   width: 1px;
 }
 
-.main__link {
-  display: inline-block;
-  min-width: 175px;
-  padding: 15px 41px;
-  background: #02897A;
-  border-radius: 4px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-}
-
-.main__link:hover {
-  opacity: 0.8;
-}
-
-.main__link:active {
-  opacity: 0.6;
-}
-
 .container {
   width: 100%;
   max-width: 1154px;
@@ -701,6 +682,89 @@ a {
   .header__nav--opened .header__nav-wrapper {
     -webkit-animation: header-content-open 0.3s linear;
             animation: header-content-open 0.3s linear;
+  }
+}
+
+.intro {
+  background-image: url(../img/amico.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 120px + 200px) center;
+  padding: 145px 0 215px;
+}
+
+.intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro__content {
+  width: 518px;
+  padding: 0;
+  margin: 0;
+}
+
+.intro__title {
+  font-size: 40px;
+  line-height: 60px;
+  color: #22343D;
+  font-family: 'Poppins';
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.intro__description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #22343D;
+  font-family: 'Poppins';
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.watch_link {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #02897A;
+  margin-left: 30px;
+}
+
+.main__link {
+  display: inline-block;
+  min-width: 175px;
+  font-family: 'Poppins';
+  font-style: bold;
+  font-weight: 700;
+  padding: 15px 41px;
+  background: #02897A;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main__link:hover {
+  opacity: 0.8;
+}
+
+.main__link:active {
+  opacity: 0.6;
+}
+
+.main__link:active {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro__content {
+    max-width: 450px;
   }
 }
 /*# sourceMappingURL=main.css.map */
