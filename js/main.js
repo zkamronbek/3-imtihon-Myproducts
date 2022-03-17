@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const burger = document.querySelector(".header__burger");
 const nav = document.querySelector(".header__nav");
 const body = document.querySelector("body");
@@ -7,3 +8,11 @@ burger.addEventListener("click", function() {
   nav.classList.toggle("header__nav--opened");
   body.classList.toggle("freez")
 })
+=======
+const question = document.querySelector(".questions__togler");
+
+question.addEventListener("click",function (){
+question .classList.toggle("questions__togler--opened")
+})
+
+>>>>>>> origin/questions
