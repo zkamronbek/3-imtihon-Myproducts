@@ -1,0 +1,125 @@
+.footer {
+padding-bottom: 45px;
+padding-top: 150px;
+}
+
+.footer__nav{
+    display: flex;
+   
+   
+}
+.footer__nav-content {
+    display: inline-block;
+    margin-right: auto;
+    &:nth-child(4n){
+        margin-right: 0;
+    }
+}
+
+.footer__nav-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #22343D;
+}
+.footer__nav-text{
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #22343D;  
+    margin: 0;
+}
+.foter__nav-wrap{
+    position: absolute;
+    transform: translate(-50% -50%);
+   
+}
+
+.footer__nav-link{
+    
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: #EDFFFC;
+    color: wheat;
+    margin-right: 16px;
+    margin-top: 24px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+   
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+.footer__nav-link:hover{
+background-color:#2ef8cc;
+}
+.footer__nav-link:hover >.footer__nav-svg{
+    transform: scale(1.6) rotate(25deg);
+}
+
+.footer__nav-title-desc{
+    margin-bottom: 34px;
+   width: 280px;
+}
+.footer__nav-input{
+    margin-bottom: 21px;
+    padding: 10px 15px; 
+    border: 1px solid #BCD0E5;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.footer__nav-submit{
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+background-color: #02897A;
+border-radius: 4px;
+padding: 7px 15px;
+border: none;
+&:hover{
+color: rgb(75, 118, 238);
+background-color: rgb(192, 247, 244);
+}
+}
+.footer__text{
+    text-align: center;
+    margin: 0;
+    margin-top: 16px;
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #22343D;
+
+}
+
+@media only screen and (max-width:808px){
+    .footer__nav{
+        display: block;
+        text-align: center;
+    }
+    .footer__nav-content{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 32px;
+    }
+    .footer__nav-title{
+    margin: 0 auto;
+    margin-bottom: 34px;
+    }
+}
