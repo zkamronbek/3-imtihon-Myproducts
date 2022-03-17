@@ -1,6 +1,6 @@
 .offer {
     margin: 0 auto;
-    width: 968px;
+    max-width: 968px;
 
 background-color: #02897A;
 border-radius: 32px;
@@ -9,8 +9,8 @@ display: flex;
 
 }
 .offer__content{
-width: 510px;
- 
+max-width: 510px;
+ padding-bottom: 56px;
   
 }
 .offer__text {
@@ -37,6 +37,7 @@ color: #02897A;
 background-color: #FFFFFF;
 border-radius: 8px;
 transition: .4s linear;
+margin-bottom: 56px;
 &:hover{
     color: #FFFFFF;
     background-color: #719cf8;
