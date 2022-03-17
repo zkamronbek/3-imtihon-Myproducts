@@ -522,4 +522,41 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 992px) {
+  .strategies {
+    padding: 100px 15px 65px;
+  }
+  .strategies__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .strategies__div {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .strategies {
+    padding: 100px 15px 65px;
+  }
+  .strategies__desc {
+    width: 350px;
+  }
+  .strategies__div {
+    text-align: center;
+  }
+  .strategies__list {
+    text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */

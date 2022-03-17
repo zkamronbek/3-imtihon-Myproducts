@@ -81,3 +81,35 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+@media only screen and(max-width: 992px){
+    .strategies{
+        padding: 100px 15px 65px;
+    }
+    .strategies__list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .strategies__div{
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .strategies{
+        padding: 100px 15px 65px;
+    }
+
+    .strategies__desc{
+        width: 350px;
+    }
+    .strategies__div{
+        text-align: center;
+    }
+
+    .strategies__list{
+        text-align: left;
+        flex-direction: column;
+    }
+}
