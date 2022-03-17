@@ -1,0 +1,54 @@
+.enterprise {
+ background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
+ padding: 52px 0;
+}
+.enterprise__content{
+display: block;
+text-align: center;
+}
+.enterprise__title {
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #22343D;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.enterprise__text {
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 51px;
+color: #22343D;
+margin: 0;
+margin-bottom: 8px;
+}
+.enterprise__wrap {
+    font-family: 'Poppins'Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+color: #22343D;
+margin: 0;
+margin-bottom: 32px;
+}
+.enterprise__link {
+    font-family: 'Montserrat'Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+background: #02897A;
+border-radius: 8px;
+padding: 11px 18px;
+transition: .4s linear;
+&:hover{
+    background-color: aqua;
+    color: #22343D;
+}
+}
